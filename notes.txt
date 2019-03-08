@@ -1,0 +1,37 @@
+Git/Github Notes
+
+git status: 
+etat actuel du dépôt git.
+
+git init : 
+initialise le dossier comme étant un dépôt git.
+
+git add :
+ajouter un fichier non indexé à l’index du depot git.
+
+git commit -m “message”:
+enregistre les changements indexer dans une nouvelle version avec un message entre guillemets.
+       -a indique de prendre aussi en compte tous les changements sur des fichiers qui ont déjà été indexé.
+
+git checkout SHA:
+nous place sur la version du commit  identifier par le SHA.
+		master: indiquer master a la place d’un code SHA indique a git de nous mettre au tout dernier commit.
+
+git revert SHADuCommit:
+creer un commit qui inverse le dernier commit.
+
+git commit --amend -m "Votre nouveau message":
+change le message du dernier commit SEULEMENT SI VOUS N’AVEZ PAS ENCORE PUSHE LE COMMIT SUR L’ORIGINE.
+
+git reset --hard:
+annule tous les changements qui n’ont pas encore été comités.
+
+git clone lien:
+telecharge le dossier git se trouvant à l'adresse lien dans votre dossier git.
+
+git push origin master:
+envoi les modifications à la branche master de origin.
+
+git pull origin master:
+récupère les modifications depuis une autres machine.
+
